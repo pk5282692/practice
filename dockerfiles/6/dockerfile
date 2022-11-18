@@ -1,0 +1,3 @@
+FROM tomcat
+MAINTAINER Naagendra
+EXPOSE 9090

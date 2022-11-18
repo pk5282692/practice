@@ -1,0 +1,14 @@
+---
+Version: '3'
+
+services:
+  devserver:
+    image: jenkins
+    ports:
+     - 6060:8080
+    deploy:
+     replicas: 2
+     placement:
+      constraints:
+       -node.hostname == Manager
+
